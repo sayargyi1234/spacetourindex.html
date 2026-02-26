@@ -1,0 +1,50 @@
+ /* Swiss International Style - Order Success */
+:root {
+    --swiss-red: #ff0000;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.success-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-left: 20px solid var(--black); /* Structural anchor */
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.85;
+    letter-spacing: -5px;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+
+
+/* Small secondary detail for Swiss flavor */
+.order-id {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #999;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="paid.css">
+</head>
+<body>
+    <header>
+        <div style="text-align: center;">
+            <h1 style="margin:0;">Gear Payment</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="shop.html">shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="payment-container" style="text-align: center;">
+        <h1>Mission Payment</h1>
+        <p style="color: #888;">Complete your transaction to secure your launch window.</p>
+        
+        <form action="/submit_payment" method="POST">
+            <label for="Full_name">Passenger Name:</label><br>
+            <input type="text" id="Full_name" name="Full_name" placeholder="Full name" required><br>
+
+            <label for="Email">Communication Channel (Email):</label><br>
+            <input type="text" id="Email" name="Email" required><br>
+
+            <h3>Select Propulsion (Payment)</h3>
+            <div class="payment-selection">
+                <input type="radio" name="web" id="p1"> <label for="p1" class="pay-method"><img src="pay1.jpg" width="60"></label>
+                <input type="radio" name="web" id="p2"> <label for="p2" class="pay-method"><img src="pay2.jpg" width="60"></label>
+                <input type="radio" name="web" id="p3"> <label for="p3" class="pay-method"><img src="pay3.jpg" width="60"></label>
+            </div>
+            <br>
+
+            <label for="cc">Credit Card Number:</label><br>
+            <input type="text" id="cc" name="card" placeholder="0000 0000 0000 0000" required><br>
+     
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="09..." required><br>
+
+            <label for="billing_address">Earth Residence (Billing Address):</label><br>
+            <textarea id="billing_address" name="billing_address" rows="3" required></textarea><br><br>
+
+            <div class="button-group">
+                <button type="button" class="btn1"><a href="shop.html">Shop</a></button>
+                <button type="submit" class="btn2"><a href="order.html">Buy</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

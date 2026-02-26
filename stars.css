@@ -1,0 +1,117 @@
+/* Core Styling */
+body {   
+    font-family: "Helvetica Neue", Helvetica, sans-serif; 
+    margin: 0; 
+    background: #000;
+    color: #000;
+}
+
+.comparison-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Common Pane Elements */
+.pane { 
+    width: 50%;
+    padding: 60px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pane-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Left Pane: Stars (Yellow) */
+.stars-pane { 
+    background: #ffffff; /* Your signature yellow */
+    border-right: 2px solid #000;
+}
+
+/* Right Pane: Planets (White) */
+.planets-pane { 
+    background: #ff0000; 
+}
+
+/* Typography */
+h1 { 
+    font-size: 7rem;
+    margin: 10px 0 30px -5px; 
+    text-transform: uppercase;
+    letter-spacing: -6px; 
+    line-height: 0.8;
+    font-weight: 900;
+}
+
+.category-tag { 
+    background: #000000; 
+    color: #fff; 
+    padding: 6px 12px; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    font-size: 0.75rem; 
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+.description p { 
+    font-size: 1.25rem; 
+    line-height: 1.5; 
+    font-weight: 600; 
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+/* Image Presentation */
+.image-box {
+    margin-top: 40px;
+    border: 4px solid #000;
+    line-height: 0;
+    box-shadow: 15px 15px 0px #000; /* Brutalist shadow */
+    transition: 0.3s transform ease;
+}
+
+.image-box:hover {
+    transform: translate(-5px, -5px);
+}
+
+.image-box img { 
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+    filter: contrast(1.1) grayscale(20%); 
+}
+
+/* Navigation */
+.footer-nav {
+    margin-top: 60px;
+}
+
+.cmd-link { 
+    display: inline-block;
+    color: #000; 
+    font-weight: 900; 
+    text-decoration: none; 
+    padding: 10px 0;
+    border-bottom: 10px solid #000;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.cmd-link:hover { 
+    background: #000;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .comparison-container { flex-direction: column; }
+    .pane { width: 100%; }
+    h1 { font-size: 5rem; }
+}
